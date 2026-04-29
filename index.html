@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Víctor Duran - Ingeniero, Instructor y Emprendedor</title>
+  <meta name="description" content="Víctor Duran es Ingeniero, instructor y emprendedor, con especialidad en Cisco, AWS y Microsoft. Ofrece cursos prácticos, laboratorios y proyectos empresariales." />
+  <style>
+    :root{
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #0b4f8a;      /* azul corporativo */
+      --accent: #1cc9c9;       /* cyan luminoso */
+      --radius: 12px;
+    }
+    *{box-sizing:border-box}
+    html, body { margin:0; padding:0; font-family: Inter, system-ui, -apple-system, Arial, sans-serif; color:var(--text); background:var(--bg);}
+    a { color: var(--primary); text-decoration: none; }
+    header { position: sticky; top:0; z-index: 1000; background: white; border-bottom: 1px solid #eee; }
+    .nav { max-width: 1100px; margin:0 auto; display:flex; align-items:center; justify-content: space-between; padding: 14px 16px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:700; }
+    .brand .logo { font-size: 1.25rem; }
+    nav a { margin: 0 10px; font-size: 0.95rem; color: #374151; }
+    .hero {
+      background: linear-gradient(135deg, #0b4f8a 0%, #1b7bd2 60%, #1cc9c9 100%);
+      color: white;
+      padding: 72px 20px;
+      text-align: left;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { background: white; border-radius: var(--radius); padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
+    h1 { margin:0 0 6px; font-size: 2rem; }
+    h2 { font-size: 1.5rem; margin: 0 0 12px; }
+    p { color: #374151; line-height: 1.6; }
+    .cta { display:inline-block; padding: 12px 20px; border-radius: 999px; background: white; color: var(--primary); font-weight: 700; border: 2px solid white; text-decoration: none; transition: transform .2s ease; }
+    .cta:hover { transform: translateY(-1px); background: #f0f4f8; border-color: #fff; }
+    footer { text-align:center; color: var(--muted); padding: 28px 0; font-size: 0.9rem; }
+    @media (max-width: 900px){
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px){
+      .grid { grid-template-columns: 1fr; }
+      header .nav { flex-wrap: wrap; gap: 10px; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav" aria-label="Navegación principal">
+    <div class="brand" aria-label="Marca">
+      <span class="logo" style="font-size:1.2rem">🚀</span>
+      <span>Víctor Duran • Ingeniero, Instructor y Emprendedor</span>
+    </div>
+    <nav role="navigation" aria-label="Secciones">
+      <a href="#servicios">Servicios</a>
+      <a href="#cursos">Catálogo de cursos</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" aria-label="Sección principal de la marca">
+  <div class="container" style="max-width:900px">
+    <h1>Transformo conocimiento en cursos y soluciones con impacto real</h1>
+    <p style="font-size:1.15rem; max-width:720px;">
+      Soy Víctor Duran, ingeniero e instructor, especializado en Cisco, AWS y Microsoft. Proporciono aprendizaje práctico, laboratorios reales y proyectos empresariales para impulsar tu capacitación y tus resultados.
+    </p>
+    <p style="margin-top:8px;">
+      ¿Quieres diseñar una ruta de aprendizaje a medida para tu equipo o para tu audiencia? Conversemos.
+    </p>
+    <a class="cta" href="#contacto" aria-label="Solicitar propuesta">Solicitar propuesta</a>
+  </div>
+</section>
+
+<section id="servicios" class="container" aria-label="Servicios">
+  <h2>Servicios principales</h2>
+  <div class="grid" role="list">
+    <div class="card" role="listitem">
+      <h3>Cursos y capacitaciones</h3>
+      <p>Programas estructurados por módulos (Cisco, AWS, Microsoft) con laboratorios y evaluaciones alineadas a objetivos de negocio.</p>
+    </div>
+    <div class="card" role="listitem">
+      <h3>Laboratorios prácticos</h3>
+      <p>Laboratorios simulados con escenarios reales para fortalecer habilidades técnicas y aplicación en entornos empresariales.</p>
+    </div>
+    <div class="card" role="listitem">
+      <h3>Proyectos y consultoría</h3>
+      <p>Proyectos empresariales y asesoría en operaciones y finanzas para maximizar ROI de soluciones tecnológicas.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cursos" class="container" aria-label="Catálogo de cursos">
+  <h2>Catálogo de cursos (ejemplos)</h2>
+  <div class="grid" role="list">
+    <div class="card" role="listitem">
+      <h3>Cisco Foundations</h3>
+      <p>Fundamentos de redes, enrutamiento, switching y seguridad. Laboratorios prácticos y evaluación.</p>
+    </div>
+    <div class="card" role="listitem">
+      <h3>AWS Cloud Fundamentals</h3>
+      <p>Diseño de VPC, IAM, compute, storage y seguridad básica. Laboratorios y ejercicios prácticos.</p>
+    </div>
+    <div class="card" role="listitem">
+      <h3>Microsoft Enterprise IT</h3>
+      <p>Azure Fundamentals, Active Directory, gobernanza y seguridad. Laboratorios y casos de uso.</p>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos" class="container" aria-label="Proyectos y casos de estudio">
+  <h2>Proyectos y casos de estudio</h2>
+  <div class="grid" role="list">
+    <div class="card" role="listitem">
+      <h3>Capstone Enterprise Design</h3>
+      <p>Diseño integral de soluciones multi-dominio: Cisco + Cloud + Microsoft 365 con gobernanza y costos.</p>
+    </div>
+    <div class="card" role="listitem">
+      <h3>Laboratorio de Migración</h3>
+      <p>Migración planificada de servicios a AWS y Azure con prácticas de seguridad y costos optimizados.</p>
+    </div>
+    <div class="card" role="listitem">
+      <h3>Proyecto de Seguridad Colaborativa</h3>
+      <p>Defensa en</p>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="container" aria-label="Contacto">
+  <h2>¿Listo para empezar?</h2>
+  <p>Hablemos sobre tus necesidades de capacitación y proyectos. Te ayudaré a diseñar soluciones efectivas.</p>
+  <p>Puedes contactarme directamente enviándome un mensaje o a través de los siguientes medios:</p>
+  <div class="grid" style="max-width:500px; margin: 20px auto;" role="list">
+    <div class="card" role="listitem" style="text-align: center;">
+      <h3>Email</h3>
+      <p>victor.duran@example.com</p>
+          </div>
+    <div class="card" role="listitem" style="text-align: center;">
+      <h3>Teléfono</h3>
+      <p>+52 55 1234 5678</p>
+    </div>
+  </div>
+  <p style="text-align:center; margin-top:16px;">
+    ¡Espero tu consulta!
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Víctor Duran. Todos los derechos reservados.</p>
+  <p><a href="https://github.com/vgduran/vg">Repositorio de Proyecto</a> • <a href="https://pages.github.com/">GitHub Pages</a></p>
+</footer>
+
+</body>
+</html>
