@@ -1,0 +1,10 @@
+name: Deploy Landing Page to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Despliega cada vez que hagas push a la rama main
+
+jobs:
+  build-and-deploy:
+    runs-
